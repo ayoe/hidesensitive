@@ -1,5 +1,4 @@
 #import "Headers.h"
-#include <dlfcn.h>
 
 %hook SBAwayBulletinListItem
 
