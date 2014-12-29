@@ -23,6 +23,8 @@ v 0.1-13: thought blocking NC on lock screen would be a good idea
 
 v 0.1-14: it wasn't.
 
+v 0.1.1-1: working preference bundle! looking deeper into applist, for the time being there is a master kill switch
+
 Credits
 ============
 
