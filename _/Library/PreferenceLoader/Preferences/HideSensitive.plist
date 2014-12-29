@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = HideSensitive;
+	cell = PSLinkCell;
+	detail = HideSensitiveListController;
+	icon = HideSensitive.png;
+	isController = 1;
+	label = HideSensitive;
+    };
+}
