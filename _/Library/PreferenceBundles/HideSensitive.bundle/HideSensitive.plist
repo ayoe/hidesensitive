@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>ALSectionDescriptors</key>
+		<array>
+			<dict>
+				<key>cell</key>
+				<string>PSButtonCell</string>
+				<key>label</key>
+				<string>say hi</string>
+			</dict>
+		</array>
+		<key>ALAllowsSelection</key>
+		<true/>
+		<key>ALSettingsKeyPrefix</key>
+		<string>Settings-</string>
+		<key>ALSettingsPath</key>
+		<string>/Library/PreferenceBundles/HideSensitive.bundle/HideSensitive.plist</string>
+		<key>label</key>
+		<string>Settings</string>
+		<key>isController</key>
+		<string>1</string>
+		<key>icon</key>
+		<string>/Applications/Preferences.app/Settings.png</string>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>bundle</key>
+		<string>AppList</string>
+	</dict>
+</dict>
+</plist>
