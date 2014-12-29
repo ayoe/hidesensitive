@@ -1,6 +1,8 @@
 Hide Sensitive
 ============
 
+CYDIA REPO (if you're not interested in the source code): http://cydia.myrepospace.com/d4rkh0rse/
+
 ![screen1](http://i.imgur.com/4heFeoW.png)
 
 This tweak is designed to automatically replace the notification content on the lock screen of certain apps with a notification indicating that the content is sensitive and is hidden.
