@@ -7,7 +7,6 @@ HideSensitive_FILES = HideSensitive.mm
 HideSensitive_INSTALL_PATH = /Library/PreferenceBundles
 HideSensitive_FRAMEWORKS = UIKit
 HideSensitive_PRIVATE_FRAMEWORKS = Preferences
-HideSensitive_LIBRARIES = applist
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 

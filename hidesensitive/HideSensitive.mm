@@ -1,5 +1,4 @@
 #import <Preferences/Preferences.h>
-#include <AppList/AppList.h>
 
 @interface HideSensitiveListController: PSListController {
 }
@@ -11,6 +10,10 @@
 		_specifiers = [[self loadSpecifiersFromPlistName:@"HideSensitive" target:self] retain];
 	}
 	return _specifiers;
+}
+
+-(void)respring {
+    system("killall -9 SpringBoard");
 }
 @end
 
