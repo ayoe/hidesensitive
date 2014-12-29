@@ -25,6 +25,8 @@ v 0.1-14: it wasn't.
 
 v 0.1.1-1: working preference bundle! looking deeper into applist, for the time being there is a master kill switch
 
+v 0.1.1-2: added Instagram, Kik, Twitter, Gmail, and Pinterest to the list
+
 Credits
 ============
 
