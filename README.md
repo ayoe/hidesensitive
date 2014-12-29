@@ -18,7 +18,9 @@ Changelog
 ============
 
 v 0.1-8: fixed WhatsApp's bundle identifier and added a prefs bundle that does nothing as of now
+
 v 0.1-13: thought blocking NC on lock screen would be a good idea
+
 v 0.1-14: it wasn't.
 
 Credits
