@@ -14,6 +14,11 @@ Beta Information
 
 As of version 0.1, we are now in open beta! Please help in any way you can.
 
+Changelog
+============
+
+v 0.1-8: fixed WhatsApp's bundle identifier and added a prefs bundle that does nothing as of now
+
 Credits
 ============
 
