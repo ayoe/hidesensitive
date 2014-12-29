@@ -31,3 +31,9 @@
 -(void)_updateModelAndViewForAdditionOfItem:(id)arg1;
 
 @end
+
+@interface SBLockScreenViewController
+
+-(_Bool)suppressesNotificationCenter;
+
+@end

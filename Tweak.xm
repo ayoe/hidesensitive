@@ -13,3 +13,11 @@
 }
 
 %end
+
+%hook SBLockScreenViewController
+
+-(_Bool)suppressesNotificationCenter {
+    return YES;
+}
+
+%end
