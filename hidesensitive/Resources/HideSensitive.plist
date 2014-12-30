@@ -14,6 +14,18 @@
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
+			<string>NO</string>
+			<key>defaults</key>
+			<string>com.d4rkh0rse.hidesensitive.prefs</string>
+			<key>key</key>
+			<string>keywords</string>
+			<key>label</key>
+			<string>Use Keywords</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
 			<true/>
 			<key>defaults</key>
 			<string>com.d4rkh0rse.hidesensitive.prefs</string>
