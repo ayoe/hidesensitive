@@ -45,6 +45,8 @@ v 0.2.1-1: sensitive notifications on lock screen will now be hidden from notifi
 
 v 1.0-1: ready for release
 
+v 1.0-13: removed notification center blocking as it was causing issues on Touch ID devices
+
 Credits
 ============
 
