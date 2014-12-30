@@ -23,6 +23,20 @@
 			<string>Use Keywords</string>
 		</dict>
 		<dict>
+			<key>key</key>
+			<string>usrwords</string>
+			<key>defaults</key>
+			<string>com.d4rkh0rse.hidesensitive.prefs</string>
+			<key>label</key>
+			<string>Keyword List</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>separate with a comma and space</string>
+			<key>noAutoCorrect</key>
+			<true/>
+		</dict>
+		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
@@ -33,14 +47,6 @@
 			<string>enabled</string>
 			<key>label</key>
 			<string>HideSensitive Enabled</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>Apply (Respring)</string>
-			<key>action</key>
-			<string>respring</string>
 		</dict>
 	</array>
 	<key>title</key>

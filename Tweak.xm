@@ -14,7 +14,8 @@
             }
             return %orig;
         } else {
-            NSArray *keyblocked = @[@"commented", @"liked", @"SSN", @"secur", @"retweet", @"poke", @"vilify", @"mail", @"meeting", @"$", @"dollar", @"money", @"bank", @"balance"];
+            NSString *keyWords = [prefs objectForKey:@"usrwords"];
+            NSArray *keyblocked = [keyWords componentsSeparatedByString:@", "];
             NSString *origs = %orig;
             for (NSString *key in keyblocked) {
                 if ([origs containsString:key]) {

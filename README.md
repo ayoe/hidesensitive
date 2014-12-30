@@ -29,6 +29,8 @@ v 0.1.1-2: added Instagram, Kik, Twitter, Gmail, and Pinterest to the list
 
 v 0.1.1-3: added a new "keywords" feature - block notifications with certain keywords. feel free to clone and add your own! but please also tell me what you're adding thanks
 
+v 0.1.2-1: keywords are officially open to user input! KNOWN BUG: sometimes keywords fail to save over respring. this doesn't always happen. also, no need to respring to apply.
+
 Credits
 ============
 
