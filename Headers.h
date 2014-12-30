@@ -12,8 +12,28 @@
 
 #endif
 
+@interface SBBBSectionInfo
+
+@property(readonly, nonatomic) NSString *listSectionIdentifier;
+
+@end
+
+@interface SBNotificationCenterSectionInfo : SBBBSectionInfo
+
+@end
+
+@interface SBNotificationsBulletinInfo
+
+@property(retain, nonatomic) SBNotificationCenterSectionInfo *sectionInfo;
+-(id)_secondaryText;
+
+@end
+
+
+
 @interface BBBulletin
 
++(id)copyCachedBulletinWithBulletinID:(id)arg1;
 @property(copy, nonatomic) NSString *sectionID;
 @property(copy, nonatomic) NSString *message;
 
@@ -32,8 +52,9 @@
 
 @end
 
-@interface SBLockScreenViewController
+@interface SBLockScreenManager
 
--(_Bool)suppressesNotificationCenter;
+-(_Bool)attemptUnlockWithPasscode:(id)arg1;
+-(void)_bioAuthenticated:(id)arg1;
 
 @end

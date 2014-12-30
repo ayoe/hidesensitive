@@ -2,6 +2,8 @@
 
 NSDictionary *prefs;
 
+BOOL deviceIsLocked = YES;
+
 %hook SBAwayBulletinListItem
 
 -(id)message {
@@ -26,6 +28,62 @@ NSDictionary *prefs;
         }
     } else {
         return %orig;
+    }
+}
+
+%end
+
+%hook SBNotificationsBulletinInfo
+
+%new
+-(NSString *)sectionID {
+    return [[self sectionInfo] listSectionIdentifier];
+}
+
+-(id)_secondaryText {
+    if (deviceIsLocked == YES) {
+        if ([[prefs objectForKey:@"enabled"] boolValue] == YES) {
+            if ([[prefs objectForKey:@"keywords"] boolValue] == NO) {
+                NSString *keyID = [@"HideSensitive-" stringByAppendingString:[self sectionID]];
+                if ([[prefs objectForKey:keyID] boolValue] == YES) {
+                    return @"sensitive content hidden";
+                }
+            } else {
+                NSString *keyWords = [prefs objectForKey:@"usrwords"];
+                NSArray *keyblocked = [keyWords componentsSeparatedByString:@", "];
+                NSString *origs = %orig;
+                for (NSString *key in keyblocked) {
+                    if ([origs containsString:key]) {
+                        return @"sensitive content hidden";
+                    }
+                }
+            }
+            return %orig;
+        } else {
+            return %orig;
+        }
+    } else {
+        %orig;
+    }
+}
+
+%end
+
+%hook SBLockScreenManager
+
+-(_Bool)attemptUnlockWithPasscode:(id)arg1 {
+    if (%orig == YES) {
+        deviceIsLocked = NO;
+    } else {
+        deviceIsLocked = YES;
+    }
+}
+
+-(void)_bioAuthenticated:(id)arg1 {
+    if ([arg1 boolValue] == YES) {
+        deviceIsLocked = NO;
+    } else {
+        deviceIsLocked = YES;
     }
 }
 

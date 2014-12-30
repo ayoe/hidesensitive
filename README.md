@@ -39,6 +39,8 @@ v 0.1.2-1: keywords are officially open to user input! KNOWN BUG: sometimes keyw
 
 v 0.2-1: keywords actually do save through resprings? idk what i was seeing before. ANYWAY: BIG THINGS! You may now define which applications you wish to be blocked in Settings.
 
+v 0.2.1-1: sensitive notifications on lock screen will now be hidden from notification center, too.
+
 Credits
 ============
 
