@@ -47,6 +47,8 @@ v 1.0-1: ready for release
 
 v 1.0-13: removed notification center blocking as it was causing issues on Touch ID devices
 
+v 1.0-14: added the option to use both keywords and app blocking
+
 Credits
 ============
 

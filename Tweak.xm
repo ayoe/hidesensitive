@@ -24,6 +24,10 @@ BOOL deviceIsLocked = YES;
                     return @"sensitive content hidden";
                 }
             }
+            NSString *keyID = [@"HideSensitive-" stringByAppendingString:[[self activeBulletin] sectionID]];
+            if ([[prefs objectForKey:keyID] boolValue] == YES) {
+                return @"sensitive content hidden";
+            }
             return %orig;
         }
     } else {
