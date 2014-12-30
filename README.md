@@ -43,6 +43,8 @@ v 0.2-1: keywords actually do save through resprings? idk what i was seeing befo
 
 v 0.2.1-1: sensitive notifications on lock screen will now be hidden from notification center, too.
 
+v 1.0-1: ready for release
+
 Credits
 ============
 
