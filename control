@@ -1,7 +1,7 @@
 Package: com.d4rkh0rse.hidesensitive
 Name: HideSensitive
-Depends: mobilesubstrate
-Version: 0.1.2
+Depends: mobilesubstrate, applist
+Version: 0.2
 Architecture: iphoneos-arm
 Description: hides possibly sensitive lock screen notification content
 Maintainer: d4rkh0rse
