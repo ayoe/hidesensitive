@@ -13,12 +13,14 @@ If you choose to black list, say, Messages, all Messages notifications content w
 
 Please don't make fun of the mess that is my code D:
 
-Beta Information
+Information
 ============
 
 As of version 0.1, we are now in open beta! Please help in any way you can.
 
 As of version 0.2, we are basically in a state to be released to a default repo. I want to see if I can get more features in this tweak first, though. Keep sounding off with ideas!
+
+As of version 1.0, the tweak is ready for release and is being published to a default repo.
 
 Changelog
 ============
