@@ -41,7 +41,7 @@ BOOL deviceIsLocked = YES;
 }
 
 -(id)_secondaryText {
-    if (deviceIsLocked == YES) {
+    if (deviceIsLocked == YES && [[prefs objectForKey:@"nc"] boolValue] == YES) {
         if ([[prefs objectForKey:@"enabled"] boolValue] == YES) {
             if ([[prefs objectForKey:@"keywords"] boolValue] == NO) {
                 NSString *keyID = [@"HideSensitive-" stringByAppendingString:[self sectionID]];
@@ -71,12 +71,13 @@ BOOL deviceIsLocked = YES;
 
 %hook SBLockScreenManager
 
--(_Bool)attemptUnlockWithPasscode:(id)arg1 {
-    if (%orig == YES) {
-        deviceIsLocked = NO;
-    } else {
+-(void)_setUILocked:(_Bool)arg1 {
+    if (arg1 == YES) {
         deviceIsLocked = YES;
+    } else {
+        deviceIsLocked = NO;
     }
+    %orig;
 }
 
 -(void)_bioAuthenticated:(id)arg1 {
@@ -85,6 +86,7 @@ BOOL deviceIsLocked = YES;
     } else {
         deviceIsLocked = YES;
     }
+    %orig;
 }
 
 %end

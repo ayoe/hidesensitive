@@ -56,5 +56,6 @@
 
 -(_Bool)attemptUnlockWithPasscode:(id)arg1;
 -(void)_bioAuthenticated:(id)arg1;
+-(void)_setUILocked:(_Bool)arg1;
 
 @end
