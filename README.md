@@ -49,6 +49,8 @@ v 1.0-13: removed notification center blocking as it was causing issues on Touch
 
 v 1.0-14: added the option to use both keywords and app blocking
 
+v 1.0.1-1: no changes
+
 Credits
 ============
 
